@@ -1,20 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>Template</h1>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Weather app</h1>
+      </nav>
+    </header>
 
-  <div id="content">
-  </div>
+    <div id="content">
+      <div>
+        <form id="form" action="">
+          <label for="location">Location: </label>
+          <input type="text" name="location" pattern="^[a-zA-ZæøåÆØÅ\s\-]*$" />
+          <input type="submit" value="Submit" id="subm" />
+          <h2 id="loading">...</h2>
+        </form>
+      </div>
 
-  
-</body>
+      <div id="display">
+        <h1 id="location"></h1>
+        <h2 id="temp"></h2>
+        <h3 id="conditions"></h3>
+      </div>
+    </div>
+  </body>
 </html>
